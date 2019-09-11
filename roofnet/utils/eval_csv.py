@@ -19,6 +19,7 @@ def compute_metrics(data):
         data: a Pandas dataframe with columns 'transition_true' and 'transition_predicted'
     returns:
         true fraction and avg error
+    """
     num_true = 0.0
     total = 0.0
     error = 0.0
