@@ -3,10 +3,10 @@ dist/
 build/
 roofnet.egg*
 sample_data*
-
+labeled_dataset/
 # Compiled python modules.
 *.pyc
-
+saved_models/
 # Setuptools distribution folder.
 /dist/
 
