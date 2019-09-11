@@ -5,15 +5,20 @@ import numpy as np
 import pandas as pd
 
 """
-Computes evaluation metrics on roofnet data and writes them to a json file. 
+Computes evaluation metrics on roofnet data and writes them to a json file.
 
-The expected input is a directory including one or .csv files with that contain at least 
+The expected input is a directory including one or .csv files with that contain at least
 two columns with the names: transition_true,transition_predicted
 
 """
 
 
 def compute_metrics(data):
+    """ Computes the average error and true fraction of a dataframe
+    Args:
+        data: a Pandas dataframe with columns 'transition_true' and 'transition_predicted'
+    returns:
+        true fraction and avg error
     num_true = 0.0
     total = 0.0
     error = 0.0
